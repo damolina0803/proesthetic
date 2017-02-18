@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('layouts.app') @section('titulo') Servicio @endsection @section('contenedor') {{csrf_field()}}
+=======
+@extends('layouts.app') @section('titulo') Clínica @endsection @section('contenedor') 
+>>>>>>> a932fcc7549e02187aff24de0ea2d658819e577c
 <div class="box">
     <div class="box-header">
         <h2>Registrar</h2>
@@ -6,7 +10,8 @@
     <div class="box-body">
         <div class="row">
             <div class="col-sm-4 offset-sm-4">
-                <form data-ui-jp="parsley" novalidate="" method="post" action="/clinica/create">
+                <form data-ui-jp="parsley" novalidate="" method="post" action="/clinica/crear">
+                {{csrf_field()}}
                     <div class="form-group">
                         <label>NIT</label>
                         <input class="form-control" required="" data-parsley-id="136" type="text" name="NIT" maxlength="10">
@@ -19,6 +24,15 @@
                     <div class="form-group">
                         <label>Dirección</label>
                         <input class="form-control" required="" data-parsley-id="138" type="text" name="direccion">
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo Contrato</label>
+                        <select class="form-control c-select" name="tipoContrato_id">
+                                @foreach($clinica as $value)
+                                <option value="{{$value->id}}"> {{$value->nombre}}</option>
+                                @endforeach
+                            </select>
+                       
                     </div>
                     <div class="form-group">
                         <label>Teléfono</label>

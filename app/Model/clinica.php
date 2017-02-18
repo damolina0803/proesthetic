@@ -9,7 +9,7 @@ class clinica extends Model
     public $table = "clinica";
     
     protected $fillable = [
-        'nombre', 'telefono', 'estado', 'NIT', 'direccion', 'diaCorte', 'mesCorte'
+        'nombre', 'telefono', 'estado', 'NIT', 'direccion', 'diaCorte', 'mesCorte', 'tipoContrato_id'
     ];
     
 }

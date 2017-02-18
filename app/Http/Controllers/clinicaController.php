@@ -8,21 +8,30 @@ use App\Model\clinica;
 class clinicaController extends Controller
 {
     public function index(){
-        return view("clinica.index");
+        $clinica=[];
+        return view("clinica.index", compact('clinica'));
     }
     
     public function create(Request $request){
-        //try{ 
+        
         $input=$request->all();
-        Clinica::create($input);
-       // return redirect('/clinica/registrar');
-         // } catch(\Exception $e){
-        return redirect('/clinica/registrar');
-          //}
+        clinica::create($input);
+    
+
+        return redirect('clinica/registrar');
+          
         
         
         
         
+    }
+        public function save(){
+       
+       
+
+        return view('clinica.index', compact('clinica'));
+
+
     }
     
 }
