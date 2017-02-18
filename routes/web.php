@@ -20,8 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/clinica/registrar', 'clinicaController@index');
-Route::post('/clinica/crear', 'clinicaController@create');
+Route::post('/clinica/crear', 'clinicaController@save');
 
 
-Route::get('/clinica/usuario/registrar', 'usuarioController@create');
+Route::get('/usuario/registrar', 'usuarioController@create');
 Route::post('/usuario/crear', 'usuarioController@save');

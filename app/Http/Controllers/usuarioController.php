@@ -26,7 +26,8 @@ class usuarioController extends Controller
         $input = $request->all();
           $preguntas = pregunta::all();
         $roles = rol::all();
+        $clinica = clinica::all();
         Usuario::create($input);
-        return view('usuario.index', compact('preguntas', 'roles') );
+        return view('usuario.index', compact('preguntas', 'roles', 'clinica') );
     }
 }
