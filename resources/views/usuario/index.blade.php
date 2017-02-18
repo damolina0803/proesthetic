@@ -55,6 +55,15 @@
                             <label>Respuesta</label>
                             <input class="form-control" required="" data-parsley-id="138" type="password" name="respuesta">
                         </div>
+
+                          <div class="form-group">
+                            <label>Nombre de la Clínica</label>
+                            <select class="form-control c-select" name="clinica_id">
+                                @foreach($clinica as $value)
+                                <option value="{{$value->id}}"> {{$value->nombre}}</option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
                     <div class="col-sm-12">
                         <div class=" p-a text-center">

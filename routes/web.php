@@ -23,5 +23,5 @@ Route::get('/clinica/registrar', 'clinicaController@index');
 Route::post('/clinica/crear', 'clinicaController@create');
 
 
-Route::get('/usuario/registrar', 'usuarioController@create');
+Route::get('/clinica/usuario/registrar', 'usuarioController@create');
 Route::post('/usuario/crear', 'usuarioController@save');

@@ -6,13 +6,19 @@ use Illuminate\Http\Request;
 use App\Model\usuario;
 use App\Model\rol;
 use App\Model\pregunta;
+use App\Model\clinica;
+
 
 class usuarioController extends Controller
 {
     public function create(){
-        $preguntas = pregunta::all();
+        $preguntas = pregunta::all();   
         $roles = rol::all();
-        return view('usuario.index', compact('preguntas', 'roles'));
+        $clinica = clinica::all();
+
+        return view('usuario.index', compact('preguntas', 'roles','clinica'));
+
+
     }
     
     
