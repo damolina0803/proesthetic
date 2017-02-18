@@ -12,6 +12,6 @@ class clinica extends Model
       'NIT',  'nombre', 'telefono', 'estado', 'direccion', 'diaCorte', 'mesCorte', 'tipo_contrato_id'
     ];
 
-    public $timestamp =  false;
+
 
 }

@@ -12,16 +12,26 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/usuario/registrar', 'usuarioController@create');
-Route::post('/usuario/crear', 'usuarioController@save');
-
 Route::resource('servicio','servicioController');
 Route::resource('contrato','tipoContratoController');
 Route::resource('clinica','clinicaController');
+Route::resource('usuario','usuarioController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
