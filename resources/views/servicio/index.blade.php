@@ -1,35 +1,26 @@
-@extends('layouts.app') @section('titulo') Servicio @endsection @section('contenedor')
+@extends('layouts.app')
 
-<div class="box">
-  <div class="box-header">
-    <h2>Registrar</h2>
-  </div>
-  <div class="box-body">
-    <div class="row">
-      <div class="col-sm-4 offset-sm-4">
-        <form data-ui-jp="parsley" novalidate="" method="post" action="/servicio">
-          {{csrf_field()}}
-          <div class="form-group">
-            <label>Nombre</label>
-            <input class="form-control" required="" data-parsley-id="136" type="text" name="nombre">
-          </div>
-          <div class="form-group">
-            <label>Descripción</label>
-            <textarea name="descripcion" class="form-control" rows="8" cols="80"></textarea>
-          </div>
+@section('titulo')
+Servicio
+@endsection
 
-          <div class=" p-a text-center">
-            <button type="submit" class="btn info">Registrar</button>
-          </div>
-
-        </form>
+@section('contenedor')
+<div class="padding">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="box">
+        <div class="box-header">
+          <a name="button" class="btn btn-link" href="/servicio/create">Crear</a>
+        </div>
       </div>
     </div>
+    <div class="col-sm-3">
+        <div class="box">
+          <div class="box-header">
+            <a name="button" class="btn btn-link" href="#">Listar</a>
+          </div>
+        </div>
+      </div>
   </div>
-
 </div>
-
-
-
-
 @endsection
