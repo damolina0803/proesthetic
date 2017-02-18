@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\servicio;
 use Notify;
+use Datatables;
 
 class servicioController extends Controller
 {
@@ -14,6 +15,16 @@ class servicioController extends Controller
   *
   * @return \Illuminate\Http\Response
   */
+  public function getData (Request $Request)
+  {
+    $servicios = servicio::all();
+    return Datatables::of($servicios)
+    ->addColumn('action', function ($servicio) {
+      return '<a href="/servicio/'.$servicio->id.'/edit" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i>&nbsp;Editar</a>
+      <a href="/servicio/'.$servicio->id.'/edit" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i>&nbsp;Inabilitar</a>';
+    })
+    ->make(true);
+  }
   public function index()
   {
     return view("servicio.index");
@@ -52,7 +63,8 @@ class servicioController extends Controller
   */
   public function show($id)
   {
-    //
+    $servicios = servicio::all();
+    return view('servicio.listar');
   }
 
   /**
@@ -63,7 +75,14 @@ class servicioController extends Controller
   */
   public function edit($id)
   {
-    //
+    $servicios = servicio::find($id);
+    if ($servicios==null) {
+      Notify::warning('No se encontraron datos','Espera...');
+      return redirect('/servicio/show');
+    } else {
+      return view('servicio.editar',compact('servicios'));
+    }
+
   }
 
   /**
@@ -75,7 +94,16 @@ class servicioController extends Controller
   */
   public function update(Request $request, $id)
   {
-    //
+    $input = $request->all();
+    $servicios = servicio::find($id);
+    if ($servicios==null) {
+      Notify::warning('No se encontraron datos','Nota: ');
+      return redirect('servicio/show');
+    }
+      $servicios->update($input);
+      Notify::success("El servicio ". $input['nombre'] .", se modifico con éxito.","Modificacion exitosa");
+      return redirect('servicio/show');
+
   }
 
   /**
@@ -86,6 +114,6 @@ class servicioController extends Controller
   */
   public function destroy($id)
   {
-    //
+
   }
 }

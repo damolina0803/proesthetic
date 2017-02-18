@@ -10,7 +10,7 @@
           {{csrf_field()}}
           <div class="form-group">
             <label>Nombre</label>
-            <input class="form-control" required="" data-parsley-id="136" type="text" name="nombre">
+            <input class="form-contr2ol" required="" data-parsley-id="136" type="text" name="nombre">
           </div>
           <div class="form-group">
             <label>Descripción</label>

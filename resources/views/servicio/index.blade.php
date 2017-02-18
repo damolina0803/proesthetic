@@ -17,7 +17,7 @@ Servicio
     <div class="col-sm-3">
         <div class="box">
           <div class="box-header">
-            <a name="button" class="btn btn-link" href="#">Listar</a>
+            <a name="button" class="btn btn-link" href="/servicio/show">Listar</a>
           </div>
         </div>
       </div>

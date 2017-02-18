@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>aside - Bootstrap 4 web application</title>
   <meta name="description" content="Responsive, Bootstrap, BS4" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="/css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
   <link rel="stylesheet" href="/css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="/plugins/pnotify/pnotify.custom.min.css" type="text/css" />
+  <link rel="stylesheet" href="/plugins/dataTables/datatables.min.css"/>
 
   <!-- build:css css/styles/app.min.css -->
   <link rel="stylesheet" href="/css/styles/app.css" type="text/css" />
@@ -501,7 +502,8 @@
           <a data-toggle="modal" data-target="#aside" class="navbar-item pull-left hidden-lg-up p-r m-a-0">
             <i class="ion-navicon"></i>
           </a>
-          <div class="navbar-item pull-left h5" id="pageTitle">@yield('titulo')</div>
+          <div class="navbar-item pull-left h5" id="pageTitle">
+            @yield('titulo')</div>
           <!-- nabar right -->
           <ul class="nav navbar-nav pull-right">
             <li class="nav-item dropdown pos-stc-xs">
@@ -611,81 +613,7 @@
 
 
     <!-- ############ SWITHCHER START-->
-    <div id="switcher">
-      <div class="switcher dark-white" id="sw-theme">
-        <a href="#" data-ui-toggle-class="active" data-ui-target="#sw-theme" class="dark-white sw-btn">
-          <i class="fa fa-gear text-muted"></i>
-        </a>
-        <div class="box-header">
-          <a href="https://themeforest.net/item/aside-dashboard-ui-kit/17903768?ref=flatfull" class="btn btn-xs rounded danger pull-right">BUY</a>
-          <strong>Theme Switcher</strong>
-        </div>
-        <div class="box-divider"></div>
-        <div class="box-body">
-          <p id="settingLayout" class="hidden-md-down">
-            <label class="md-check m-y-xs" data-target="folded">
-              <input type="checkbox">
-              <i></i>
-              <span>Folded Aside</span>
-            </label>
-            <label class="m-y-xs pointer" data-ui-fullscreen data-target="fullscreen">
-              <span class="fa fa-expand fa-fw m-r-xs"></span>
-              <span>Fullscreen Mode</span>
-            </label>
-          </p>
-          <p>Colors:</p>
-          <p data-target="color">
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
-              <input type="radio" name="color" value="primary">
-              <i class="primary"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
-              <input type="radio" name="color" value="accent">
-              <i class="accent"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
-              <input type="radio" name="color" value="warn">
-              <i class="warn"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
-              <input type="radio" name="color" value="success">
-              <i class="success"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
-              <input type="radio" name="color" value="info">
-              <i class="info"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
-              <input type="radio" name="color" value="warning">
-              <i class="warning"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-md">
-              <input type="radio" name="color" value="danger">
-              <i class="danger"></i>
-            </label>
-          </p>
-          <p>Themes:</p>
-          <div data-target="bg" class="clearfix">
-            <label class="radio radio-inline m-a-0 ui-check ui-check-lg">
-              <input type="radio" name="theme" value="">
-              <i class="light"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-lg">
-              <input type="radio" name="theme" value="grey">
-              <i class="grey"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-lg">
-              <input type="radio" name="theme" value="dark">
-              <i class="dark"></i>
-            </label>
-            <label class="radio radio-inline m-a-0 ui-check ui-check-color ui-check-lg">
-              <input type="radio" name="theme" value="black">
-              <i class="black"></i>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- ############ SWITHCHER END-->
 
     <!-- ############ LAYOUT END-->
@@ -720,11 +648,16 @@
   <script src="/scripts/app.js"></script>
   <script src="/scripts/ajax.js"></script>
   <script src="/plugins/pnotify/pnotify.custom.min.js"></script>
+  <script src="/plugins/dataTables/datatables.min.js"></script>
   @if (Session::has('notifier.notice'))
   <script>
   new PNotify({!! Session::get('notifier.notice') !!});
   </script>
   @endif
+  <!-- escript propia de casa pagina -->
+@yield('script')
+
+  </script>
   <!-- endbuild -->
 </body>
 

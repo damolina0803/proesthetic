@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/usuario/registrar', 'usuarioController@create');
 Route::post('/usuario/crear', 'usuarioController@save');
+Route::get('servicio/get', 'servicioController@getData');
 
 Route::resource('servicio','servicioController');
 Route::resource('contrato','tipoContratoController');
