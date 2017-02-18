@@ -1,4 +1,4 @@
-@extends('layouts.app') @section('titulo') Clínica @endsection @section('contenedor') {{csrf_field()}}
+@extends('layouts.app') @section('titulo') Servicio @endsection @section('contenedor') {{csrf_field()}}
 <div class="box">
     <div class="box-header">
         <h2>Registrar</h2>

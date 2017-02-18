@@ -25,3 +25,5 @@ Route::post('/clinica/crear', 'clinicaController@create');
 
 Route::get('/clinica/usuario/registrar', 'usuarioController@create');
 Route::post('/usuario/crear', 'usuarioController@save');
+
+Route::resource('servicio','servicioController');
