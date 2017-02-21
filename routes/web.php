@@ -28,6 +28,7 @@ Route::resource('servicio','servicioController');
 Route::resource('contrato','tipoContratoController');
 Route::resource('clinica','clinicaController');
 Route::resource('usuario','usuarioController');
+Route::resource('servicioTipoContrato','servicioTipoContratoController');
 
 Auth::routes();
 
