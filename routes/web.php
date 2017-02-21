@@ -40,3 +40,7 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource('/proveedor', 'proveedorController');
+
+Route::resource('/ordendeproduccion', 'ordendeproduccionController');
