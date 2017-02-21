@@ -1,12 +1,11 @@
-    <?php
+<?php
 
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\clinica;
-use App\Model\tipoContrato;
-use Notify;
-class clinicaController extends Controller
+use App\Http\Controllers\Controller;
+
+class insumoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class clinicaController extends Controller
      */
     public function index()
     {
-        //
-        return view('clinica.index');
+        return  view('insumo.index');
     }
 
     /**
@@ -26,9 +24,7 @@ class clinicaController extends Controller
      */
     public function create()
     {
-        //
-        $tipoContrato = tipoContrato::all();
-        return view('clinica.crear', compact('tipoContrato'));
+        return view ('insumo.crear');
     }
 
     /**
@@ -40,12 +36,6 @@ class clinicaController extends Controller
     public function store(Request $request)
     {
         //
-
-        $input = $request->all();
-        clinica::create($input);
-        $tipoContrato = tipoContrato::all();
-        Notify::success("La clínica ". $input['nombre'] .", se registro con éxito.","Registro exitoso");
-        return view('clinica.crear', compact('tipoContrato'));
     }
 
     /**
