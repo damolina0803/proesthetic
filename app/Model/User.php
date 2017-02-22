@@ -17,7 +17,7 @@ class User extends Authenticatable
      public $table = "usuario_clinica";
 
     protected $fillable = [
-        'usuario', 'password', 'rol_id', 'pregunta_id', 'respuesta', 'estado'
+        'username', 'password', 'rol_id', 'pregunta_id', 'respuesta', 'estado_cliente'
     ];
 
     /**

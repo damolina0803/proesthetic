@@ -51,7 +51,7 @@ class servicioController extends Controller
     //funcion para guardar en bd
     $input = $request->all();
     servicio::create($input);
-    Notify::success("El servicio ". $input['nombre'] .", se registro con éxito.","Registro exitoso");
+    Notify::success("El servicio \"". $input['nombre'] ."\", se registro con éxito.","Registro exitoso");
     return view('servicio.crear');
   }
 
@@ -101,7 +101,7 @@ class servicioController extends Controller
       return redirect('servicio/show');
     }
       $servicios->update($input);
-      Notify::success("El servicio ". $input['nombre'] .", se modifico con éxito.","Modificacion exitosa");
+      Notify::success("El servicio \"". $input['nombre'] ."\", se modifico con éxito.","Modificacion exitosa");
       return redirect('servicio/show');
 
   }

@@ -9,4 +9,6 @@ class proveedor extends Model
   public $table = "proveedor";
 
   protected $fillable = ['nombre', 'telefono'];
+
+  public $timestamps = false;
 }

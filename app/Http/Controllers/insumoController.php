@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\proveedor;
 
 class insumoController extends Controller
 {
@@ -24,7 +25,8 @@ class insumoController extends Controller
      */
     public function create()
     {
-        return view ('insumo.crear');
+        $proveedores = proveedor::all();
+        return view ('insumo.crear', compact('proveedores'));
     }
 
     /**

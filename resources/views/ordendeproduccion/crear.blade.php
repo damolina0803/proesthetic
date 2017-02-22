@@ -11,8 +11,6 @@
           <div class="col-sm-4 offset-sm-2">
 
 
-
-
             <div class="form-group">
               <label>Usuario</label>
               <select class="form-control c-select" name="clinica_id">

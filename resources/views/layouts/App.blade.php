@@ -11,11 +11,11 @@
   <!-- for ios 7 style, multi-resolution icon of 152x152 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="apple-touch-icon" href="/images/logo.png">
   <meta name="apple-mobile-web-app-title" content="Flatkit">
   <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" sizes="196x196" href="images/logo.png">
+  <link rel="shortcut icon" sizes="196x196" href="/images/logo.png">
 
   <!-- style -->
   <link rel="stylesheet" href="/css/animate.css/animate.min.css" type="text/css" />
@@ -46,9 +46,9 @@
       <div class="navside dk" data-layout="column">
         <div class="navbar no-radius">
           <!-- brand -->
-          <a href="index.html" class="navbar-brand">
+          <a href="/index.html" class="navbar-brand">
             <div data-ui-include="'images/logo.svg'"></div>
-            <img src="images/logo.png" alt="." class="hide">
+            <img src="/images/logo.png" alt="." class="hide">
             <span class="hidden-folded inline">aside</span>
           </a>
           <!-- / brand -->
@@ -61,7 +61,7 @@
                 <span class="text-xs">Main</span>
               </li>
               <li>
-                <a href="dashboard.html" class="b-danger">
+                <a href="/dashboard.html" class="b-danger">
                   <span class="nav-icon text-white no-fade">
                     <i class="ion-filing"></i>
                   </span>
@@ -69,7 +69,7 @@
                 </a>
               </li>
               <li>
-                <a href="app.project.html" class="b-success">
+                <a href="/app.project.html" class="b-success">
                   <span class="nav-icon text-white no-fade">
                     <i class="ion-android-apps"></i>
                   </span>
@@ -77,7 +77,7 @@
                 </a>
               </li>
               <li>
-                <a href="app.inbox.html" class="b-info">
+                <a href="/app.inbox.html" class="b-info">
                   <span class="nav-icon text-white no-fade">
                     <i class="ion-email"></i>
                   </span>
@@ -85,7 +85,7 @@
                 </a>
               </li>
               <li>
-                <a href="app.message.html" class="b-default">
+                <a href="/app.message.html" class="b-default">
                   <span class="nav-label">
                     <b class="label label-xs rounded danger"></b>
                   </span>
@@ -96,7 +96,7 @@
                 </a>
               </li>
               <li>
-                <a href="app.contact.html" class="b-default">
+                <a href="/app.contact.html" class="b-default">
                   <span class="nav-icon">
                     <i class="ion-person"></i>
                   </span>
@@ -119,92 +119,92 @@
                 </a>
                 <ul class="nav-sub nav-mega nav-mega-3">
                   <li>
-                    <a href="ui.arrow.html">
+                    <a href="/ui.arrow.html">
                       <span class="nav-text">Arrow</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.box.html">
+                    <a href="/ui.box.html">
                       <span class="nav-text">Box</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.button.html">
+                    <a href="/ui.button.html">
                       <span class="nav-text">Button</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.color.html">
+                    <a href="/ui.color.html">
                       <span class="nav-text">Color</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.dropdown.html">
+                    <a href="/ui.dropdown.html">
                       <span class="nav-text">Dropdown</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.grid.html">
+                    <a href="/ui.grid.html">
                       <span class="nav-text">Grid</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.icon.html">
+                    <a href="/ui.icon.html">
                       <span class="nav-text">Icon</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.label.html">
+                    <a href="/ui.label.html">
                       <span class="nav-text">Label</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.list.html">
+                    <a href="/ui.list.html">
                       <span class="nav-text">List Group</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.modal.html">
+                    <a href="/ui.modal.html">
                       <span class="nav-text">Modal</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.nav.html">
+                    <a href="/ui.nav.html">
                       <span class="nav-text">Nav</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.progress.html">
+                    <a href="/ui.progress.html">
                       <span class="nav-text">Progress</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.social.html">
+                    <a href="/ui.social.html">
                       <span class="nav-text">Social</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.sortable.html">
+                    <a href="/ui.sortable.html">
                       <span class="nav-text">Sortable</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.streamline.html">
+                    <a href="/ui.streamline.html">
                       <span class="nav-text">Streamline</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.timeline.html">
+                    <a href="/ui.timeline.html">
                       <span class="nav-text">Timeline</span>
                     </a>
                   </li>
                   <li>
-                    <a href="map.vector.html">
+                    <a href="/map.vector.html">
                       <span class="nav-text">Vector Map</span>
                     </a>
                   </li>
                   <li>
-                    <a href="ui.widget.html">
+                    <a href="/ui.widget.html">
                       <span class="nav-text">Widget</span>
                     </a>
                   </li>
@@ -223,72 +223,72 @@
                 </a>
                 <ul class="nav-sub nav-mega">
                   <li>
-                    <a href="profile.html">
+                    <a href="/profile.html">
                       <span class="nav-text">Profile</span>
                     </a>
                   </li>
                   <li>
-                    <a href="setting.html">
+                    <a href="/setting.html">
                       <span class="nav-text">Setting</span>
                     </a>
                   </li>
                   <li>
-                    <a href="search.html">
+                    <a href="/search.html">
                       <span class="nav-text">Search</span>
                     </a>
                   </li>
                   <li>
-                    <a href="faq.html">
+                    <a href="/faq.html">
                       <span class="nav-text">FAQ</span>
                     </a>
                   </li>
                   <li>
-                    <a href="gallery.html">
+                    <a href="/gallery.html">
                       <span class="nav-text">Gallery</span>
                     </a>
                   </li>
                   <li>
-                    <a href="invoice.html">
+                    <a href="/invoice.html">
                       <span class="nav-text">Invoice</span>
                     </a>
                   </li>
                   <li>
-                    <a href="price.html">
+                    <a href="/price.html">
                       <span class="nav-text">Price</span>
                     </a>
                   </li>
                   <li>
-                    <a href="blank.html">
+                    <a href="/blank.html">
                       <span class="nav-text">Blank</span>
                     </a>
                   </li>
                   <li>
-                    <a href="signin.html">
+                    <a href="/signin.html">
                       <span class="nav-text">Sign In</span>
                     </a>
                   </li>
                   <li>
-                    <a href="signup.html">
+                    <a href="/signup.html">
                       <span class="nav-text">Sign Up</span>
                     </a>
                   </li>
                   <li>
-                    <a href="forgot-password.html">
+                    <a href="/forgot-password.html">
                       <span class="nav-text">Forgot Password</span>
                     </a>
                   </li>
                   <li>
-                    <a href="lockme.html">
+                    <a href="/lockme.html">
                       <span class="nav-text">Lockme Screen</span>
                     </a>
                   </li>
                   <li>
-                    <a href="404.html">
+                    <a href="/404.html">
                       <span class="nav-text">Error 404</span>
                     </a>
                   </li>
                   <li>
-                    <a href="505.html">
+                    <a href="/505.html">
                       <span class="nav-text">Error 505</span>
                     </a>
                   </li>
@@ -307,47 +307,47 @@
                 </a>
                 <ul class="nav-sub">
                   <li>
-                    <a href="form.layout.html">
+                    <a href="/form.layout.html">
                       <span class="nav-text">Form Layout</span>
                     </a>
                   </li>
                   <li>
-                    <a href="form.element.html">
+                    <a href="/form.element.html">
                       <span class="nav-text">Form Element</span>
                     </a>
                   </li>
                   <li>
-                    <a href="form.validation.html">
+                    <a href="/form.validation.html">
                       <span class="nav-text">Form Validation</span>
                     </a>
                   </li>
                   <li>
-                    <a href="form.select.html">
+                    <a href="/form.select.html">
                       <span class="nav-text">Select</span>
                     </a>
                   </li>
                   <li>
-                    <a href="form.editor.html">
+                    <a href="/form.editor.html">
                       <span class="nav-text">Editor</span>
                     </a>
                   </li>
                   <li>
-                    <a href="form.picker.html">
+                    <a href="/form.picker.html">
                       <span class="nav-text">Picker</span>
                     </a>
                   </li>
                   <li>
-                    <a href="form.wizard.html">
+                    <a href="/form.wizard.html">
                       <span class="nav-text">Wizard</span>
                     </a>
                   </li>
                   <li>
-                    <a href="form.dropzone.html" class="no-ajax">
+                    <a href="/form.dropzone.html" class="no-ajax">
                       <span class="nav-text">File Upload</span>
                     </a>
                   </li>
                   <li>
-                    <a href="form.calendar.html">
+                    <a href="/form.calendar.html">
                       <span class="nav-text">Calendar</span>
                     </a>
                   </li>
@@ -366,17 +366,17 @@
                 </a>
                 <ul class="nav-sub">
                   <li>
-                    <a href="static.html">
+                    <a href="/static.html">
                       <span class="nav-text">Static table</span>
                     </a>
                   </li>
                   <li>
-                    <a href="datatable.html">
+                    <a href="/datatable.html">
                       <span class="nav-text">Datatable</span>
                     </a>
                   </li>
                   <li>
-                    <a href="footable.html">
+                    <a href="/footable.html">
                       <span class="nav-text">Footable</span>
                     </a>
                   </li>
@@ -394,12 +394,12 @@
                 </a>
                 <ul class="nav-sub">
                   <li>
-                    <a href="chart.html">
+                    <a href="/chart.html">
                       <span class="nav-text">Chart</span>
                     </a>
                   </li>
                   <li>
-                    <a href="chartjs.html">
+                    <a href="/chartjs.html">
                       <span class="nav-text">Chartjs</span>
                     </a>
                   </li>
@@ -412,37 +412,37 @@
                     </a>
                     <ul class="nav-sub">
                       <li>
-                        <a href="echarts-line.html">
+                        <a href="/echarts-line.html">
                           <span class="nav-text">line</span>
                         </a>
                       </li>
                       <li>
-                        <a href="echarts-bar.html">
+                        <a href="/echarts-bar.html">
                           <span class="nav-text">Bar</span>
                         </a>
                       </li>
                       <li>
-                        <a href="echarts-pie.html">
+                        <a href="/echarts-pie.html">
                           <span class="nav-text">Pie</span>
                         </a>
                       </li>
                       <li>
-                        <a href="echarts-scatter.html">
+                        <a href="/echarts-scatter.html">
                           <span class="nav-text">Scatter</span>
                         </a>
                       </li>
                       <li>
-                        <a href="echarts-radar-chord.html">
+                        <a href="/echarts-radar-chord.html">
                           <span class="nav-text">Radar &amp; Chord</span>
                         </a>
                       </li>
                       <li>
-                        <a href="echarts-gauge-funnel.html">
+                        <a href="/echarts-gauge-funnel.html">
                           <span class="nav-text">Gauges &amp; Funnel</span>
                         </a>
                       </li>
                       <li>
-                        <a href="echarts-map.html">
+                        <a href="/echarts-map.html">
                           <span class="nav-text">Map</span>
                         </a>
                       </li>
@@ -458,7 +458,7 @@
             <a data-toggle="dropdown">
               <div class="pull-left">
                 <div class="inline"><span class="avatar w-40 grey">JR</span></div>
-                <img src="images/a0.jpg" alt="..." class="w-40 img-circle hide">
+                <img src="/images/a0.jpg" alt="..." class="w-40 img-circle hide">
               </div>
               <div class="clear hidden-folded p-x">
                 <span class="block _500 text-muted">Jean Reyes</span>
@@ -469,23 +469,23 @@
               </div>
             </a>
             <div class="dropdown-menu w dropdown-menu-scale ">
-              <a class="dropdown-item" href="profile.html">
+              <a class="dropdown-item" href="/profile.html">
                 <span>Profile</span>
               </a>
-              <a class="dropdown-item" href="setting.html">
+              <a class="dropdown-item" href="/setting.html">
                 <span>Settings</span>
               </a>
-              <a class="dropdown-item" href="app.inbox.html">
+              <a class="dropdown-item" href="/app.inbox.html">
                 <span>Inbox</span>
               </a>
-              <a class="dropdown-item" href="app.message.html">
+              <a class="dropdown-item" href="/app.message.html">
                 <span>Message</span>
               </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="docs.html">
+              <a class="dropdown-item" href="/docs.html">
                 Need help?
               </a>
-              <a class="dropdown-item" href="signin.html">Sign out</a>
+              <a class="dropdown-item" href="/signin.html">Sign out</a>
             </div>
           </div>
         </div>
@@ -536,28 +536,28 @@
                   <ul class="list-group list-group-gap m-a-0">
                     <li class="list-group-item dark-white box-shadow-z0 b">
                       <span class="pull-left m-r">
-                        <img src="images/a0.jpg" alt="..." class="w-40 img-circle">
+                        <img src="/images/a0.jpg" alt="..." class="w-40 img-circle">
                       </span>
                       <span class="clear block">
-                        Use awesome <a href="#" class="text-primary">animate.css</a><br>
+                        Use awesome <a href="/#" class="text-primary">animate.css</a><br>
                         <small class="text-muted">10 minutes ago</small>
                       </span>
                     </li>
                     <li class="list-group-item dark-white box-shadow-z0 b">
                       <span class="pull-left m-r">
-                        <img src="images/a1.jpg" alt="..." class="w-40 img-circle">
+                        <img src="/images/a1.jpg" alt="..." class="w-40 img-circle">
                       </span>
                       <span class="clear block">
-                        <a href="#" class="text-primary">Joe</a> Added you as friend<br>
+                        <a href="/#" class="text-primary">Joe</a> Added you as friend<br>
                         <small class="text-muted">2 hours ago</small>
                       </span>
                     </li>
                     <li class="list-group-item dark-white text-color box-shadow-z0 b">
                       <span class="pull-left m-r">
-                        <img src="images/a2.jpg" alt="..." class="w-40 img-circle">
+                        <img src="/images/a2.jpg" alt="..." class="w-40 img-circle">
                       </span>
                       <span class="clear block">
-                        <a href="#" class="text-primary">Danie</a> sent you a message<br>
+                        <a href="/#" class="text-primary">Danie</a> sent you a message<br>
                         <small class="text-muted">1 day ago</small>
                       </span>
                     </li>
@@ -569,27 +569,27 @@
             <li class="nav-item dropdown">
               <a class="nav-link clear" data-toggle="dropdown">
                 <span class="avatar w-32">
-                  <img src="images/a3.jpg" class="w-full rounded" alt="...">
+                  <img src="/images/a3.jpg" class="w-full rounded" alt="...">
                 </span>
               </a>
               <div class="dropdown-menu w dropdown-menu-scale pull-right">
-                <a class="dropdown-item" href="profile.html">
+                <a class="dropdown-item" href="/profile.html">
                   <span>Profile</span>
                 </a>
-                <a class="dropdown-item" href="setting.html">
+                <a class="dropdown-item" href="/setting.html">
                   <span>Settings</span>
                 </a>
-                <a class="dropdown-item" href="app.inbox.html">
+                <a class="dropdown-item" href="/app.inbox.html">
                   <span>Inbox</span>
                 </a>
-                <a class="dropdown-item" href="app.message.html">
+                <a class="dropdown-item" href="/app.message.html">
                   <span>Message</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="docs.html">
+                <a class="dropdown-item" href="/docs.html">
                   Need help?
                 </a>
-                <a class="dropdown-item" href="signin.html">Sign out</a>
+                <a class="dropdown-item" href="/signin.html">Sign out</a>
               </div>
             </li>
           </ul>
