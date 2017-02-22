@@ -1,13 +1,11 @@
-<?php
+    <?php
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Model\clinica;
 use App\Model\tipoContrato;
 use Notify;
-
 class clinicaController extends Controller
 {
     /**
