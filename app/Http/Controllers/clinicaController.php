@@ -1,12 +1,11 @@
 <?php
-<<<<<<< HEAD
 namespace App\Http\Controllers;
-=======
+
 
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
->>>>>>> d7a4d866f9c2e2602d8fa79c14ef1553c1be0b55
+
 use Illuminate\Http\Request;
 use App\Model\clinica;
 use App\Model\tipoContrato;
