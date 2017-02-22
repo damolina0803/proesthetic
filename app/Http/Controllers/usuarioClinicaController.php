@@ -51,6 +51,7 @@ class usuarioClinicaController extends Controller
       $roles = rol::all();
       $preguntas = preguntaCliente::all();
       $input = $request->all();
+      $input['password'] = bcrypt($input['password']);
       usuarioClinica::create($input);
       Notify::success("Usuario ". $input['username'] .", se registro con éxito.","Registro exitoso");
       return view('usuarioClinica.crear', compact('clinica', 'roles', 'preguntas'));
