@@ -51,7 +51,7 @@ class usuarioController extends Controller
         $roles = rol::all();
         $preguntas = pregunta::all();
         $input = $request->all();
-        $usuario =User::create([ "username"=>$input["username"], "password"=>bcrypt($input["password"]), "rol_id"=>$input["rol_id"],
+        $usuario =User::create([ "usuario"=>$input["username"], "password"=>bcrypt($input["password"]), "rol_id"=>$input["rol_id"],
         "pregunta_id"=>$input["pregunta_id"], "respuesta"=>$input["respuesta"]
       ]);
         $id_usuario = $usuario->id;
