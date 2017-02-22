@@ -23,15 +23,3 @@ Route::resource('servicio','servicioController');
 Route::resource('contrato','tipoContratoController');
 Route::resource('clinica','clinicaController');
 Route::resource('usuario','usuarioController');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');

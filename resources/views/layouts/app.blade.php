@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>aside - Bootstrap 4 web application</title>
   <meta name="description" content="Responsive, Bootstrap, BS4" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="/css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
   <link rel="stylesheet" href="/css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="/plugins/pnotify/pnotify.custom.min.css" type="text/css" />
+  <link rel="stylesheet" href="/plugins/dataTables/datatables.min.css"/>
 
   <!-- build:css css/styles/app.min.css -->
   <link rel="stylesheet" href="/css/styles/app.css" type="text/css" />
@@ -506,6 +507,31 @@
   <div id="content" class="app-content box-shadow-z2 bg pjax-container" role="main">
 
 
+<<<<<<< HEAD
+      <div class="app-header white bg b-b">
+        <div class="navbar" data-pjax>
+          <a data-toggle="modal" data-target="#aside" class="navbar-item pull-left hidden-lg-up p-r m-a-0">
+            <i class="ion-navicon"></i>
+          </a>
+          <div class="navbar-item pull-left h5" id="pageTitle">
+            @yield('titulo')</div>
+          <!-- nabar right -->
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item dropdown pos-stc-xs">
+              <a class="nav-link" data-toggle="dropdown">
+                <i class="ion-android-search w-24"></i>
+              </a>
+              <div class="dropdown-menu text-color w-md animated fadeInUp pull-right">
+                <!-- search form -->
+                <form class="navbar-form form-inline navbar-item m-a-0 p-x v-m" role="search">
+                  <div class="form-group l-h m-a-0">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search projects...">
+                      <span class="input-group-btn">
+                        <button type="submit" class="btn white b-a no-shadow"><i class="fa fa-search"></i></button>
+                      </span>
+                    </div>
+
     <div class="app-header white bg b-b">
       <div class="navbar" data-pjax>
         <a data-toggle="modal" data-target="#aside" class="navbar-item pull-left hidden-lg-up p-r m-a-0">
@@ -609,6 +635,11 @@
 
 
 
+<<<<<<< HEAD
+    <!-- ############ SWITHCHER START-->
+
+    <!-- ############ SWITHCHER END-->
+=======
           </div>
         </li>
       </ul>
@@ -630,6 +661,35 @@
 </div>
 <!-- / -->
 
+
+<<<<<<< HEAD
+  <script src="/scripts/config.lazyload.js"></script>
+  <script src="/scripts/ui-load.js"></script>
+  <script src="/scripts/ui-jp.js"></script>
+  <script src="/scripts/ui-include.js"></script>
+  <script src="/scripts/ui-device.js"></script>
+  <script src="/scripts/ui-form.js"></script>
+  <script src="/scripts/ui-modal.js"></script>
+  <script src="/scripts/ui-nav.js"></script>
+  <script src="/scripts/ui-list.js"></script>
+  <script src="/scripts/ui-screenfull.js"></script>
+  <script src="/scripts/ui-scroll-to.js"></script>
+  <script src="/scripts/ui-toggle-class.js"></script>
+  <script src="/scripts/ui-taburl.js"></script>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/ajax.js"></script>
+  <script src="/plugins/pnotify/pnotify.custom.min.js"></script>
+  <script src="/plugins/dataTables/datatables.min.js"></script>
+  @if (Session::has('notifier.notice'))
+  <script>
+  new PNotify({!! Session::get('notifier.notice') !!});
+  </script>
+  @endif
+  <!-- escript propia de casa pagina -->
+@yield('script')
+
+  </script>
+  <!-- endbuild -->
 
 <!-- ############ SWITHCHER START-->
 <div id="switcher">
@@ -747,6 +807,7 @@ new PNotify({!! Session::get('notifier.notice') !!});
 </script>
 @endif
 <!-- endbuild -->
+º
 </body>
 
 </html>
