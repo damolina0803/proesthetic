@@ -26,9 +26,11 @@ Route::get('contrato/get', 'tipoContratoController@getData');
 Route::get('proveedor/get', 'proveedorController@getData');
 
 
+
 Route::resource('servicio','servicioController');
 Route::resource('contrato','tipoContratoController');
 Route::resource('clinica','clinicaController');
+<<<<<<< HEAD
 Route::resource('usuario','usuarioClinicaController');
 Route::resource('proveedor', 'proveedorController');
 Route::resource('insumo','insumoController');
@@ -36,3 +38,12 @@ Route::resource('servicioTipoContrato','servicioTipoContratoController');
 Route::resource('pedido','pedidoController');
 
 Route::resource('produccion', 'ordendeproduccionController');
+=======
+Route::resource('usuario','usuarioController');
+Route::resource('insumo','insumoController');
+Route::resource('servicioTipoContrato','servicioTipoContratoController');
+Route::resource('/proveedor', 'proveedorController');
+Route::resource('/ordendeproduccion', 'ordendeproduccionController');
+
+
+>>>>>>> a45d82313358004a13c04e7e93a97669f959a8b4

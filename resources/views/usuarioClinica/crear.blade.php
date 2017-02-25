@@ -40,7 +40,7 @@
               <label>Rol de usuario</label>
               <select class="form-control c-select" name="rol_id">
                 @foreach($roles as $value)
-                <option value="{{$value->id}}"> {{$value->nombre}}</option>
+                <option value="{{$value->id}}"> {{$value->nombre."".$value->telefono}}</option>
                 @endforeach
               </select>
             </div>

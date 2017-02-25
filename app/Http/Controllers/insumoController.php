@@ -4,7 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+<<<<<<< HEAD
 use App\Model\proveedor;
+=======
+use App\Model\insumo;
+use App\Model\Proveedor;
+use Notify;
+>>>>>>> a45d82313358004a13c04e7e93a97669f959a8b4
 
 class insumoController extends Controller
 {
@@ -25,8 +31,13 @@ class insumoController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
         $proveedores = proveedor::all();
         return view ('insumo.crear', compact('proveedores'));
+=======
+        $proveedor = Proveedor::all();
+        return view ('insumo.crear', compact('proveedor'));
+>>>>>>> a45d82313358004a13c04e7e93a97669f959a8b4
     }
 
     /**
@@ -37,7 +48,10 @@ class insumoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        insumo::create($input);
+        Notify::success("El insumo ". $input['nombre']. ", se registro con éxito.","Registro exitoso");
+        return redirect('insumo/create');
     }
 
     /**

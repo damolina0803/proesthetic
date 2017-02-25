@@ -8,6 +8,7 @@ use App\Model\proveedor;
 use Notify;
 use Datatables;
 
+
 class proveedorController extends Controller
 {
   /**
@@ -27,6 +28,19 @@ class proveedorController extends Controller
     ->make(true);
   }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        
+     
+>>>>>>> a45d82313358004a13c04e7e93a97669f959a8b4
 
 
   public function index()
