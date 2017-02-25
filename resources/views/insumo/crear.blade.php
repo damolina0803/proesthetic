@@ -6,7 +6,7 @@
   <div class="box-body">
     <div class="row">
       <div class="col-sm-4 offset-sm-4">
-        <form data-ui-jp="parsley" novalidate="" method="post" action="/contrato">
+        <form data-ui-jp="parsley" novalidate="" method="post" action="{{ route('insumo.store') }}">
           {{csrf_field()}}
           <div class="form-group">
             <label>Nombre</label>
@@ -19,6 +19,9 @@
            <div class="form-group">
               <label>Proveedor</label>
               <select class="form-control c-select" name="insumo">
+              @foreach($proveedor as $value)
+                <option value="{{$value->id}}"> {{$value->nombre}}</option>
+                @endforeach
               </select>
             </div>
           <div class=" p-a text-center">

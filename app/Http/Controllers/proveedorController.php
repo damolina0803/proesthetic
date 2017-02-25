@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Model\tipoContrato;
 use Notify;
 
+
 class proveedorController extends Controller
 {
     /**
@@ -38,8 +39,8 @@ class proveedorController extends Controller
      */
     public function store(Request $request)
     {
-        //
-      
+        
+     
 
     }
 
