@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('titulo') Editar servicio
+@section('titulo') Editar contrato
 @endsection
 @section('contenedor')
 <div class="box">
@@ -9,7 +9,7 @@
   <div class="box-body">
     <div class="row">
       <div class="col-sm-4 offset-sm-4">
-        {{Form::model($servicios, ['route' => ['servicio.update',$servicios->id],'method' => 'put'])}}
+        {{Form::model($contratos, ['route' => ['contrato.update',$contratos->id],'method' => 'put'])}}
 
         <div class="form-group">
           <label>Nombre</label>

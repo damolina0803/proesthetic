@@ -3,15 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\User;
-use App\Model\clinica;
-use App\Model\personaClinica;
-use App\Model\pregunta;
-use App\Model\rol;
-use Notify;
+use App\Http\Controllers\Controller;
+use App\Model\servicio;
 
-
-class usuarioController extends Controller
+class pedidoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,7 +16,7 @@ class usuarioController extends Controller
     public function index()
     {
         //
-        return view('usuario.index');
+
     }
 
     /**
@@ -31,11 +26,8 @@ class usuarioController extends Controller
      */
     public function create()
     {
-        //
-        $clinica = clinica::all();
-        $roles = rol::all();
-        $preguntas = pregunta::all();
-        return view('usuario.crear', compact('clinica', 'roles', 'preguntas'));
+      $servicios = servicio::all();
+      return view('pedido.crear', compact('servicios'));
     }
 
     /**
@@ -47,22 +39,6 @@ class usuarioController extends Controller
     public function store(Request $request)
     {
         //
-        $clinica = clinica::all();
-        $roles = rol::all();
-        $preguntas = pregunta::all();
-        $input = $request->all();
-        $usuario =User::create([ "username"=>$input["username"], "password"=>bcrypt($input["password"]), "rol_id"=>$input["rol_id"],
-        "pregunta_id"=>$input["pregunta_id"], "respuesta"=>$input["respuesta"]
-      ]);
-        $id_usuario = $usuario->id;
-
-        personaClinica::create([ "cedula"=>$input["cedula"], "nombre"=>$input["nombre"], "apellido"=>$input["apellido"],
-        "clinica_id"=>$input["clinica_id"], "usuario_id"=>$id_usuario
-       ]);
-
-        Notify::success("Usuario ". $input['username'] .", se registro con éxito.","Registro exitoso");
-        return view('usuario.crear', compact('clinica', 'roles', 'preguntas'));
-
     }
 
     /**

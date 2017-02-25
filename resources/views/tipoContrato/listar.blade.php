@@ -1,14 +1,14 @@
 @extends('layouts.app')
 @section('titulo')
-servicio
+Contrato
 @endsection
 @section('contenedor')
 <div class="box">
   <div class="box-header">
-    <h2>Lista de servicios</h2>
+    <h2>Lista de contratos</h2>
   </div>
   <div class="box-body">
-    <table class="table table-striped b-t b-b" id="tblServicio">
+    <table class="table table-striped b-t b-b" id="tblContrato">
       <thead>
         <tr>
           <th  style="width:20%">Nombre</th>
@@ -24,14 +24,14 @@ servicio
 @endsection
 @section ('script')
 <script type="text/javascript">
-$('#tblServicio').DataTable({
+$('#tblContrato').DataTable({
   processing: true,
   serverSide: true,
   "language": {
     "url": "/plugins/dataTables/Spanish.json"
   },
 
-  ajax: '/servicio/get',
+  ajax: '/contrato/get',
   columns: [
     {data: 'nombre', name: 'nombre'},
     {data: 'descripcion', name: 'descripcion'},

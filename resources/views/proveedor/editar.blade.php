@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('titulo') Editar servicio
+@section('titulo') Editar Proveedor
 @endsection
 @section('contenedor')
 <div class="box">
@@ -9,15 +9,15 @@
   <div class="box-body">
     <div class="row">
       <div class="col-sm-4 offset-sm-4">
-        {{Form::model($servicios, ['route' => ['servicio.update',$servicios->id],'method' => 'put'])}}
+        {{Form::model($proveedor, ['route' => ['proveedor.update',$proveedor->id],'method' => 'put'])}}
 
         <div class="form-group">
           <label>Nombre</label>
           {{Form::text('nombre', null,['class'=>'form-control'])}}
         </div>
         <div class="form-group">
-          <label>Descripción</label>
-          {{Form::textarea('descripcion', null,['class'=>'form-control'])}}
+          <label>Telefono</label>
+          {{Form::text('telefono', null,['class'=>'form-control'])}}
 
           <!-- <textarea name="descripcion" class="form-control" rows="8" cols="80"></textarea> -->
         </div>
